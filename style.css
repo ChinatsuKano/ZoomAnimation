@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .wrapper,
+  .content {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .content {
+    overflow-x: hidden;
+  }
+  
+  .content .section {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .content .section.pic1 {
+    background-image: url(https://images.unsplash.com/photo-1451186859696-371d9477be93?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .content .section.pic2 {
+    background-image: url(https://cdn.mos.cms.futurecdn.net/Abq8vM8YPTV57EJf4BwsUj.jpg.webp); /* New image added */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the section */
+    height: 100vh;
+  }
+  .content .section.pic3 {
+    background-image: url(https://cdn.mos.cms.futurecdn.net/Abq8vM8YPTV57EJf4BwsUj.jpg.webp); /* New image added */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the section */
+    height: 100vh;
+  }
+  
+  .image-container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    perspective: 500px;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
